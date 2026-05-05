@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 import os
-from analyzer.chehredekhkebatane import shape_of_her
+#from analyzer.chehredekhkebatane import shape_of_her
 
 BASE_DIR= os.path.abspath(os.path.dirname(__file__))
 app=Flask(
