@@ -15,7 +15,7 @@ if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
 @app.route("/")
-
+              
 def home():
     return render_template("recognise.html")
 
@@ -38,4 +38,4 @@ def analyze():
     return jsonify(result)
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0" port=10000)
