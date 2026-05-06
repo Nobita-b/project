@@ -1,8 +1,7 @@
-from mediapipe import solutions
+import mediapipe as mp
 import cv2
 
-face_shape=solutions.face_mesh
-
+her_face = mp.solutions.face_mesh
 
 def shape_of_her(image_path):
     image=cv2.imread(image_path)
