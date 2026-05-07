@@ -1,9 +1,12 @@
-import mediapipe as mp
 import cv2
 
-her_face = mp.solutions.face_mesh
 
 def shape_of_her(image_path):
+    import mediapipe as mp
+
+    her_face = mp.solutions.face_mesh
+
+
     image=cv2.imread(image_path)
     rgb=cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
