@@ -1,0 +1,6 @@
+from supabase import create_client
+
+url="https://wizdhcsipkqugedhgert.supabase.co"
+key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndpemRoY3NpcGtxdWdlZGhnZXJ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzczOTIwMzYsImV4cCI6MjA5Mjk2ODAzNn0.Q86OswwxyTjxnuAwwIxIRMTQKvmTMY7cnAhjHWuDg1M"
+
+database=create_client(url,key)
